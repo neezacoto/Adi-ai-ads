@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         padding: 15,
         marginVertical: 10,
-        alignItems: "center"
+        alignItems: "center",
     },
     textInput: {
         color: appStyles.themes.dark,
