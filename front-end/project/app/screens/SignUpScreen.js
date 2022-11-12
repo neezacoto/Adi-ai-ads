@@ -16,17 +16,19 @@ import appStyles from '../config/appStyles';
 const validationSchema = Yup.object().shape({
     email: Yup.string().required().email().label("Email"),
     password: Yup.string().required().min(4).label("Password"),
+    passwordConfirmation: Yup.string()
+    .oneOf([Yup.ref('password'), null], 'Passwords must match')
 })
 
-function LoginScreen(props) {
+function SignUpScreen(props) {
     return (
         <View style={[appStyles.statusBar, styles.container]}>
                 <View style={styles.headerContainer}>
-                    <AppText style={styles.header}>Hi there, </AppText>
-                    <AppText style={styles.subText}>Login to your account</AppText>
+                    <AppText style={styles.header}>SignUp </AppText>
+                    <AppText style={styles.subText}>Create your new account. </AppText>
                 </View>
                 <AppForm
-                    initialValues={{email: '', password: ''}}
+                    initialValues={{email: '', password: '', passwordConfirmation: ''}}
                     onSubmit={values => console.log(values)}
                     validationSchema={validationSchema}
                 >
@@ -48,17 +50,26 @@ function LoginScreen(props) {
                         textContentType="password"
                         style={styles.loginField}
                     />
+                    <AppFormField 
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        name="passwordConfirmation"
+                        placeholder="Re-type password"
+                        secureTextEntry
+                        textContentType="passwordConfirmation"
+                        style={styles.loginField}
+                    />
                     <SubmitButton 
                         style={styles.loginButton}
                         textColor={appStyles.themes.white} 
-                        color={appStyles.themes.black} title="Login"/>
+                        color={appStyles.themes.black} title="Sign up"/>
                     <View style={styles.loginNavContainer}>
                             <AppText style={styles.wrongText}>
                                 Already have an account?
                             </AppText>
                             <TouchableWithoutFeedback>
                                 <AppText style={styles.loginText}>
-                                    Sign up
+                                    Login
                                 </AppText>
                             </TouchableWithoutFeedback>
                     </View>   
@@ -133,4 +144,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default LoginScreen;
+export default SignUpScreen;

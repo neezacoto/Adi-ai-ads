@@ -6,6 +6,7 @@ const appStyles = StyleSheet.create({
         paddingTop: Constants.statusBarHeight,
         flex: 1
     },
+    statusBarHeight: Constants.statusBarHeight,
     text: {
         fontSize: 20,
         fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
@@ -15,7 +16,7 @@ const appStyles = StyleSheet.create({
         secondary: '#fff',
         black: "#000",
         white: "#fff",
-        medium: "#6e6969",
+        medium: "#888888",
         light: "#f8f4f4",
         dark: "#0c0c0c",
         danger:"#ff5252"

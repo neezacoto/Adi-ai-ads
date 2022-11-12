@@ -4,14 +4,15 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import appStyles from '../config/appStyles';
 import AppText from './AppText';
 
-function AppButton({title, color, style, isInverted, upperCase, ...otherProps}) {
+function AppButton({title, color, size, textColor, style, isInverted, upperCase, ...otherProps}) {
 
         return (
             <TouchableOpacity 
             {...otherProps} 
             style={[
-                style, 
+                {borderRadius: 25},
                 styles.container,
+                style, 
                 isInverted
                     ? {borderColor: color, borderWidth: 1} 
                     : {backgroundColor: color}
@@ -19,7 +20,7 @@ function AppButton({title, color, style, isInverted, upperCase, ...otherProps}) 
                 
             <AppText style={[
                 (upperCase)? {textTransform: 'uppercase'}: {},
-                {fontWeight: "bold", fontSize: 18},
+                {fontWeight: "bold", fontSize: size || 18, color: textColor},
                 
                 isInverted
                     ? {color: appStyles.themes.white} 
@@ -35,7 +36,6 @@ function AppButton({title, color, style, isInverted, upperCase, ...otherProps}) 
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    borderRadius: 25,
     paddingVertical: 15,
     paddingHorizontal: 10,
     justifyContent: "center",
