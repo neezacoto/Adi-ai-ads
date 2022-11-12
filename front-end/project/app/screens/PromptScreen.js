@@ -13,11 +13,10 @@ import OptionSliderForm from "../components/Forms/OptionSliderForm";
 import appStyles from "../config/appStyles";
 
 const validationSchema = Yup.object().shape({
-  title: Yup.string().required().min(1).label("Title"),
-  price: Yup.number().required().min(1).max(10000).label("Price"),
-  description: Yup.string().label("Description"),
-  category: Yup.object().required().nullable().label("Category"),
-  images: Yup.array().min(1, "Please select at least one image.")
+  background: Yup.string().required().min(1).label("Background Description"),
+  product: Yup.string().required().min(1).label("Product Description"),
+  target: Yup.string().required().min(1).label("Target Audience"),
+  style: Yup.object().required().nullable().label("Style"),
 });
 
 function PromptScreen() {
@@ -26,11 +25,10 @@ function PromptScreen() {
         
       <Form
         initialValues={{
-          title: "",
-          price: "",
-          description: "",
-          category: null,
-          images: []
+          background: "",
+          product: "",
+          target: "",
+          style: null,
         }}
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
@@ -38,26 +36,27 @@ function PromptScreen() {
         <AppText style={styles.header}>Background Description</AppText>
         <FormField 
             maxLength={255} 
-            name="title" 
-            numberOfLines={3}
+            name="background" 
             placeholder="A photo of a delicious pizza on a table" />
         <AppText style={styles.header}>Product Description</AppText>
         <FormField
+          style={styles.desc}
           maxLength={225}
-          name="price"
-          numberOfLines={3}
+          name="product"
           placeholder="Food delivery app."
           />
           <AppText style={styles.header}>Target Audience</AppText>
         <FormField
           maxLength={255}
           multiline
-          name="description"
+          name="target"
           numberOfLines={3}
-          placeholder="Description"
+          placeholder="Sick people."
         />
         <AppText style={styles.header}>Style</AppText>
-        <OptionSliderForm />
+        <OptionSliderForm
+          name="style"
+        />
         <SubmitButton 
             color={appStyles.themes.black} 
             textColor={appStyles.themes.white}
@@ -81,6 +80,10 @@ const styles = StyleSheet.create({
   },
   submitButton: {
     marginTop: 28
+  },
+  desc: {
+    height: 60
   }
+
 });
 export default PromptScreen;
