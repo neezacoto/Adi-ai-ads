@@ -16,9 +16,9 @@ Here are the **3 main features**.
 * [**`✉️ Customer Messaging`**](https://www.twilio.com/messaging?utm_source=google&utm_medium=cpc&utm_term=twilio%20messaging&utm_campaign=G_S_NAMER_Brand_Twilio_Tier2&cq_plac=&cq_net=g&cq_pos=&cq_med=&cq_plt=gp&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEFraTVNHyxH9yQYTwyBmZ3w83xbYxiO7zUW8cqmeVcktQVuIgxZaIQaAgo6EALw_wcB) : Multi-purpose messaging to communicate with customers.
 
 <h3 id="feature1">Prompt Engineering</h3>
+> Takes a few keyword inputs, turn them into a production-level copywriting using GPT-3 model's auto completion.
 <img src="https://user-images.githubusercontent.com/55467050/201531780-d1d52b27-1ae1-4310-a9b5-4f5a6052e3c4.png">
 
-> Takes a few keyword inputs, turn them into a production-level copywriting using GPT-3 model's auto completion.
 
 # TechStack
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
