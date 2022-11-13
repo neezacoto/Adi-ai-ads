@@ -1,21 +1,26 @@
+import re
 import openai
 import requests
 import os
 
 
 def generate_slogan(product_desc, target_audience):
-    # Takes product description and target audience as string, returns string slogan
-    openai.api_key = "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"  # ADD API KEY HERE
+    """
+    Takes product description and target audience as string, returns string slogan
+    """
+    openai.api_key = "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"  # ADD API KEY HERE
     response = openai.Completion.create(
         model="text-davinci-002", prompt=f"Write a one-line creative ad for the following product to run on Instagram aimed at {target_audience.lower()}:\n\nProduct: {product_desc}.", temperature=0.5, max_tokens=60)
     return response['choices'][0]['text'].strip()
 
 
 def generate_image(style, image_description):
-    """Takes in style and image description as strings, returns string file path of image
-       style must be one of following: 'random', 'photo', '3d-render', 'cartoon', 'painting', 'hand-drawn'.
     """
-    openai.api_key = "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"  # ADD API KEY HERE
+    Takes in style and image description as strings, returns string file path of image
+    style must be one of following:
+    'random', 'photo', '3d-render', 'cartoon', 'painting', 'hand-drawn'.
+    """
+    openai.api_key = "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"  # ADD API KEY HERE
     if style == "random":
         image_style = ""
     elif style == "photo":
@@ -36,13 +41,21 @@ def generate_image(style, image_description):
 
     response = requests.get(url_path)
 
-    count = len([entry for entry in os.listdir(
-        r"C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\processed")]) + 1
-    file_name = f"image_{count}"
-
     if response.status_code:
+        # Use iteration and a regex to get the next available file number
+        images_in_raw = [entry for entry in os.listdir(
+            r"C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\raw")]
+
+        p = re.compile('^image_(\d+)\.png$')
+        next_available = 1
+        for file in images_in_raw:
+            m = p.match(file)
+            next_available = max(next_available, int(m.group(1)) + 1)
+
+        # Write to the file
+        file_name = f"image_{next_available}.png"
         fp = open(
-            r"C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\processed" + f"\image_{count}.png", 'wb')
+            r"C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\raw" + f"\{file_name}", 'wb')
         fp.write(response.content)
         fp.close()
 

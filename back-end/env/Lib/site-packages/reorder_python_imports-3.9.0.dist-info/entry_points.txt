@@ -1,0 +1,2 @@
+[console_scripts]
+reorder-python-imports = reorder_python_imports:main
