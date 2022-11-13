@@ -4,10 +4,21 @@
 <img width="865" alt="thumbnail" src="https://user-images.githubusercontent.com/55467050/201530306-e5bf75a4-cbe4-4a6c-8f8d-6fed1ed4019b.png">
 </div>
 
-The insperation behind this project was to make ads and designs more accecible to those who don't have the time money and resources to pay a graphic designer to make their ad. We cut out the middle man, and allow easier access to peoples ideas!
-<img width="1205" alt="image" src="https://user-images.githubusercontent.com/74576449/201527999-0e1531f2-1e6b-40dc-9db4-1fa27c6274cc.png">
-
 ## :book: Table of Contents
+<details open="open">
+  <ol>
+    <li><a href="#about-the-project"> ➤ Intro</a></li>
+    <li><a href="#features"> ➤ Features</a></li>
+      <ul>
+        <li><a href="#feature1">Ad Generation</a></li>
+        <li><a href="#feature2">Customer Messaging</a></li>
+      </ul>
+    <li><a href="#techniques"> ➤ Techniques Used</a></li>
+    <li><a href="#team"> ➤ Team Information</a></li>
+  </ol>
+</details>
+
+The insperation behind this project was to make ads and designs more accecible to those who don't have the time money and resources to pay a graphic designer to make their ad. We cut out the middle man, and allow easier access to peoples ideas!
 
 # TechStack
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
