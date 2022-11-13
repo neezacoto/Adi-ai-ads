@@ -27,7 +27,7 @@ Here are the **3 main features**.
 
 > Instantly generates an ad poster using the generated copywriting & DALLE-2 image generation model.
 
-![image](https://user-images.githubusercontent.com/55467050/201532296-375bff8a-0a0d-4c67-8d99-d28b1b2eb68d.png)
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/55467050/201532390-bf98aa08-798b-4e2e-bdf7-e562efbc9d51.png">
 
 
 
