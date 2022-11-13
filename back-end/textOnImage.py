@@ -34,7 +34,7 @@ fonts_max_size = len(Fonts) + 1
 def generate_text(slogan, file_path_unprocessed,style):
 
     ''' Function generates text for image'''
-
+   
 
     try:
         img = Image.open(file_path_unprocessed)
@@ -42,6 +42,7 @@ def generate_text(slogan, file_path_unprocessed,style):
         print("file not found! Please try again")
     else:
         print("Success! Image loaded.")
+        img = img.copy()
         if style == "Photo":
             widthImg, heightImg = img.size
             bright = ImageEnhance.Brightness(img)
@@ -111,6 +112,10 @@ def generate_text(slogan, file_path_unprocessed,style):
         
  
         img.show()
+
+        img.save("image_with_text.png")
+
+        return "image_with_text.png"
 
 
 
