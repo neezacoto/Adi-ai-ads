@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
 import * as Yup from "yup";
 import AppText from "../components/AppText";
-
+import { create } from 'apisauce'
 import LottieView from 'lottie-react-native'
 
 
@@ -19,6 +19,8 @@ import Generating from "./LoadingScreen";
 import LoadGenerateScreen from "./GenerateScreen";
 import LoadGenerating from "./LoadingScreen";
 
+import generate from "../api/generate";
+import animals from "../api/anmial";
 
 const validationSchema = Yup.object().shape({
   background: Yup.string().required().min(1).label("Background Description"),
@@ -30,9 +32,17 @@ const validationSchema = Yup.object().shape({
 
 function PromptScreen ({ navigation }) {
 
-    const handleSubmit = async (values) => {
-          console.log(values)
-          navigation.navigate(routes.GENERATE)      
+    const handleSubmit = async ({background, product, style, target}) => {
+          // const resp = await generate.generate(
+          //   product,
+          //   target,
+          //   style,
+          //   background)
+          const resp = await animals.get();
+          if(!resp.ok)
+            return console.log(resp.problem)
+          console.log("eanstuahoe",resp.data.image_link)
+          navigation.navigate(routes.GENERATE, {data: resp.data.image_link})      
     }
 
   return (

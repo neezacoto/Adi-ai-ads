@@ -1,21 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Image, Dimensions, ScrollView } from 'react-native';
 import AppText from '../components/AppText';
 import { MaterialCommunityIcons, FontAwesome } from '@expo/vector-icons';
 import appStyles from '../config/appStyles';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { create } from 'apisauce';
+import animals from '../api/anmial';
 
 const width = Dimensions.get('window').width
 
 let inks = 0;
 
-function GenerateScreen(props) {
+
+function GenerateScreen({route}) {
+  const [gen, setGen] = useState();
+
+  const handleSubmit = async () => {
+
+    const resp = await animals.get();
+    if(!resp.ok)
+      return
+  console.log("yoooo",resp.data.image_link)
+    setGen(resp.data.image_link)  
+    //setGen("https://cdn.discordapp.com/attachments/1041018007830405222/1041269326541496430/Frame_7.png")
+}
+  const generation = route.params
+  console.log("hello" ,generation.data)
         return (
             <ScrollView style={[appStyles.statusBar]} contentContainerStyle={{flex: 1, justifyContent: "center"}}>
                 <View style={styles.container}>
 
                   <View style={styles.imageContainer}>
-                    <Image />
+                    <Image style={styles.image} source={{uri: gen || generation.data}}/>
                   </View>
 
                   <View style={styles.inkContainer}>
@@ -36,7 +52,7 @@ function GenerateScreen(props) {
 
                         <View style={styles.pickContainer}>
                                 <View style={styles.buttonMain}>
-                                    <TouchableOpacity>
+                                    <TouchableOpacity onPress={handleSubmit}>
                                         <MaterialCommunityIcons name="restart" size={76} color={appStyles.themes.white} />
                                     </TouchableOpacity>
                                 </View>
@@ -103,7 +119,6 @@ const styles = StyleSheet.create({
     marginTop: 50,
     width: "100%",
     height: width - 24,
-    backgroundColor: appStyles.themes.black,
     shadowColor: "#000",
     shadowOffset: {
         width: 0,
@@ -140,6 +155,11 @@ const styles = StyleSheet.create({
    pickContainer: {
     alignItems: "center",
     justifyContent: "center"
+   },
+   image: {
+    width: "100%",
+    height: "100%",
+    resizeMode: 'contain'
    }
 
 })
