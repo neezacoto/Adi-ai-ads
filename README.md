@@ -4,7 +4,7 @@
 <img width="865" alt="thumbnail" src="https://user-images.githubusercontent.com/55467050/201530306-e5bf75a4-cbe4-4a6c-8f8d-6fed1ed4019b.png">
 </div>
 
-### :monocle_face: Intro
+## :monocle_face: Intro
 
 > Have you ever run ads before? Probably not. It costs $200 on average to create a professional marketing poster. 
 
