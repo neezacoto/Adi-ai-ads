@@ -7,6 +7,7 @@
 The insperation behind this project was to make ads and designs more accecible to those who don't have the time money and resources to pay a graphic designer to make their ad. We cut out the middle man, and allow easier access to peoples ideas!
 <img width="1205" alt="image" src="https://user-images.githubusercontent.com/74576449/201527999-0e1531f2-1e6b-40dc-9db4-1fa27c6274cc.png">
 
+## :book: Table of Contents
 
 # TechStack
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
