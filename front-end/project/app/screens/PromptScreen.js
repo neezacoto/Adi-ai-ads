@@ -72,17 +72,20 @@ function PromptScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: 10,
+    paddingHorizontal: 20,
     flex: 1,
+    marginTop: 20,
   },
   header: {
     fontSize: 24,
-    fontWeight: "400"
+    fontWeight: "500"
   },
   submitButton: {
-    marginTop: 28
+    marginTop: "45%",
+    position: "absolute",
   },
   desc: {
-    height: 60
+    
   }
 
 });

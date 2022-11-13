@@ -110,7 +110,8 @@ const styles = StyleSheet.create({
     },
     subText: {
         color: appStyles.themes.medium,
-        marginBottom: 40
+        marginBottom: 40,
+        
     },
     logo: {
         width: 80,
