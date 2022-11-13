@@ -71,7 +71,7 @@ Here are the **3 main features**.
 <td width="250">Frontend Engineer</td>
 <td width="150" align="center">	
 	<a href="https://github.com/neezacoto">
-	<img src="https://img.shields.io/badge/simonseo-655ced?style=social&logo=github"/>
+	<img src="https://img.shields.io/badge/christian-655ced?style=social&logo=github"/>
 	</a>
 </td>
 <td width="300" align="center">
