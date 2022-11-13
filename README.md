@@ -38,6 +38,8 @@ Here are the **3 main features**.
 ## 🧱 Technique Used
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
  
+<h2 id="team"> 💁🏻‍♀️💁🏻‍♂️ Team Information</h2>
+
 <table width="900">
 <thead>
 <tr>
