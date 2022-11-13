@@ -51,9 +51,9 @@ Here are the **3 main features**.
 </tr> 
 </thead>
 <tbody>
-	
+
 <tr>
-<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719709-4d184f89-ba47-4db8-be91-ea50456b4bb5.png" width="60" height="60"></td>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/201533525-3221b98e-b032-4f70-ac76-379e1259ec3e.png" width="60" height="60"></td>
 <td width="100" align="center">Minseok Lee</td>
 <td width="250">AI Developer<br>Designer</td>
 <td width="150" align="center">	
