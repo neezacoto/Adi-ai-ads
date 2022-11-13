@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"npm run dev-fe\" \"npm run dev-be\"",
+    "dev-be": "cd back-end/adi && python manage.py runserver",
+    "dev-fe": "cd front-end/project && npm start",
+    "dev-install": "cd front-end/project && npm install"
+
   },
   "repository": {
     "type": "git",

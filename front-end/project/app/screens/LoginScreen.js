@@ -16,7 +16,7 @@ import appStyles from '../config/appStyles';
 import routes from '../navigation/routes';
 
 const validationSchema = Yup.object().shape({
-    email: Yup.string().required().email().label("Email"),
+    username: Yup.string().required().min(4).label("Username"),
     password: Yup.string().required().min(4).label("Password"),
 })
 
@@ -33,7 +33,7 @@ function LoginScreen({ navigation }) {
                     <AppText style={styles.subText}>Login to your account</AppText>
                 </View>
                 <AppForm
-                    initialValues={{email: '', password: ''}}
+                    initialValues={{username: '', password: ''}}
 
                     onSubmit={values => handleSubmit(values)}
 
@@ -42,10 +42,9 @@ function LoginScreen({ navigation }) {
                     <AppFormField
                         autoCapitalize="none"
                         autoCorrect={false}
-                        keyboardType="email-address"
-                        name="email"
-                        placeholder="Email"
-                        textContentType="emailAddress"
+                        name="username"
+                        placeholder="username"
+                        textContentType="username"
                         style={styles.loginField}
                     />
                     <AppFormField 

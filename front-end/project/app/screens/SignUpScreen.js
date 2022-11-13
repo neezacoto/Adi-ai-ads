@@ -16,7 +16,7 @@ import appStyles from '../config/appStyles';
 import routes from '../navigation/routes';
 
 const validationSchema = Yup.object().shape({
-    email: Yup.string().required().email().label("Email"),
+    username: Yup.string().required().min(4).label("Username"),
     password: Yup.string().required().min(4).label("Password"),
     passwordConfirmation: Yup.string()
     .oneOf([Yup.ref('password'), null], 'Passwords must match')
@@ -35,7 +35,7 @@ function SignUpScreen({ navigation }) {
                     <AppText style={styles.subText}>Create your new account. </AppText>
                 </View>
                 <AppForm
-                    initialValues={{email: '', password: '', passwordConfirmation: ''}}
+                    initialValues={{username: '', password: '', passwordConfirmation: ''}}
 
                     onSubmit={values => handleSubmit(values)}
                     validationSchema={validationSchema}
@@ -43,10 +43,9 @@ function SignUpScreen({ navigation }) {
                     <AppFormField
                         autoCapitalize="none"
                         autoCorrect={false}
-                        keyboardType="email-address"
-                        name="email"
-                        placeholder="Email"
-                        textContentType="emailAddress"
+                        name="username"
+                        placeholder="Username"
+                        textContentType="username"
                         style={styles.loginField}
                     />
                     <AppFormField 
