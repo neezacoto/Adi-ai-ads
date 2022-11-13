@@ -52,7 +52,7 @@ def generate_image(request):
 
         style = recieved_json_data['style']
         img_desc = recieved_json_data['image_description']
-        
+
         dalle_response = ai.generate_image(style, img_desc)
         raw_file_name = dalle_response[0]
         dalle_link = dalle_response[1]

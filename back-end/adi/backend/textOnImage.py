@@ -1,4 +1,6 @@
 
+import os
+import re
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import ImageFont, ImageDraw, Image, ImageEnhance
@@ -14,7 +16,7 @@ global Fonts,Fonts_counter,Fonts_max_size
 
 loc = r'C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\backend\Fonts'
 
-Fonts = {1:loc + '/Roboto.ttf', 2:loc + '/Helvetica.ttf', 3:loc + '/Bodoni.ttf'} 
+Fonts = {1:loc + '/Roboto.ttf', 2:loc + '/Bodoni.ttf'} 
 
 fonts_counter = 1
 fonts_max_size = len(Fonts) + 1
@@ -43,11 +45,7 @@ def generate_text(slogan, file_path_unprocessed,style):
     else:
         print("Success! Image loaded.")
         img = img.copy()
-        if style == "photo":
-            widthImg, heightImg = img.size
-            bright = ImageEnhance.Brightness(img)
-          
-        img = bright.enhance(.5)
+
 
         widthPos = 30
         heightPos = 20
@@ -78,6 +76,8 @@ def generate_text(slogan, file_path_unprocessed,style):
         if len(words) < 5:
             parsed_sentence = sentence_parser(parsed_sentence, words)
             font = ImageFont.truetype(Font, 55)
+            
+        widthImg,heightImg = img.size
         
         ## Left alligns the image
         for i in range(length):
@@ -92,28 +92,40 @@ def generate_text(slogan, file_path_unprocessed,style):
      
 
         print('font used: '  + Font)
-
-        if style == "photo":
-     
-            Text.text((widthPos, heightPos), parsed_sentence, font=font, fill= (255,255,255))
-
-          
-        elif style == "hand-drawn":
-            Text.text((widthPos, heightPos), parsed_sentence, font=font, fill= (0,0,0))
-        
-        else:
-
-            if text_color == 'ffffff':    
+        if text_color == 'ffffff':    
             
-                Text.text((widthPos, heightPos), parsed_sentence, font=font, fill= (255,255,255))
-            if text_color == '000000':
+            Text.text((widthPos, heightPos), parsed_sentence, font=font,fill= 'white',stroke_with = 5, stroke_fill = 'black' )
+            shadowcolor = 'white'
+            Text.text((widthPos-1, heightPos-1), parsed_sentence, font=font, fill=shadowcolor)
+            Text.text((widthPos+1, heightPos-1), parsed_sentence, font=font, fill=shadowcolor)
+            Text.text((widthPos-1, heightPos+1), parsed_sentence, font=font, fill=shadowcolor)
+            Text.text((widthPos+1, heightPos+1), parsed_sentence, font=font, fill=shadowcolor)
+        if text_color == '000000':
 
-                Text.text((widthPos, heightPos), parsed_sentence, font=font, fill= (0,0,0))
+            Text.text((widthPos, heightPos), parsed_sentence, font=font,fill= 'black',stroke_with = 5, stroke_fill = 'white' )
+            shadowcolor = ''
+            Text.text((widthPos-1, heightPos-1), parsed_sentence, font=font, fill=shadowcolor)
+            Text.text((widthPos+1, heightPos-1), parsed_sentence, font=font, fill=shadowcolor)
+            Text.text((widthPos-1, heightPos+1), parsed_sentence, font=font, fill=shadowcolor)
+            Text.text((widthPos+1, heightPos+1), parsed_sentence, font=font, fill=shadowcolor)
         
 
-        img.save(r'C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\processed\image_4.png')
+        # Use iteration and a regex to get the next available file number
+        images_in_raw = [entry for entry in os.listdir(
+            r"C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\processed")]
 
-        return "image_4.png"
+        p = re.compile('^image_(\d+)\.png$')
+        next_available = 1
+        for file in images_in_raw:
+            m = p.match(file)
+            next_available = max(next_available, int(m.group(1)) + 1)
+
+        # Write to the file
+        file_name = f"image_{next_available}.png"
+
+        img.save(r'C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\processed' + f'\{file_name}')
+
+        return file_name
 
 
 
