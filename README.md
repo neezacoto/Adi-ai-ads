@@ -5,6 +5,10 @@
 
 Team of 4 friends at BU, we all are knew with the software and eager to learn. The insperation behind this project was to make ads and designs more accecible to those who don't have the time money and resources to pay a graphic designer to make their ad. We cut out the middle man, and allow easier access to peoples ideas!
 
+# TechStack
+<img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
+
+ 
 ### Back-End
 
 **Adi**: responsible for Ai Manipulation using python and Ai to generate the image and prompts, utilizing, open CV, numpy, and pillow for image manipluation in python
@@ -24,8 +28,3 @@ Team of 4 friends at BU, we all are knew with the software and eager to learn. T
 # Designs
 ### By Benjamin Lee
 <img width="876" alt="image" src="https://user-images.githubusercontent.com/74576449/201527378-4c74271c-ccea-49a1-a8f9-242e64f1fe5f.png">
-
-# TechStack
-<img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
-
- 
