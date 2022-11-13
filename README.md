@@ -14,7 +14,7 @@ The insperation behind this project was to make ads and designs more accecible t
 
 **Ben**: UI/UX Design, Group Lead, and helped with AI implementation, and overall workflow
 
-**Sai**: Responsible for setting up the API and database infrustructure utilizing Jango with python
+**Sai**: Responsible for setting up the API and database infrustructure utilizing Django with python
 
 ## Front-End
 
