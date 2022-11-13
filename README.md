@@ -110,10 +110,6 @@ Here are the **3 main features**.
 </tbody>
 </table>
 
-# [Back-end Demo](https://youtu.be/ESuaNxuOmRE)
-
-# [Front-end Demo](https://youtube.com/shorts/BpljlWJkyfA)
-
-
+## 📺[Demo Video](https://youtube.com/shorts/BpljlWJkyfA)
 https://user-images.githubusercontent.com/74576449/201528398-008893d8-7586-4791-aefa-43adc0c12eb0.mp4
 
