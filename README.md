@@ -38,7 +38,74 @@ Here are the **3 main features**.
 ## 🧱 Technique Used
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
  
- 
+<table width="900">
+<thead>
+<tr>
+<th width="100" align="center">Profile</th>
+<th width="100" align="center">Name</th>
+<th width="250" align="center">Role</th>
+<th width="150" align="center">Github</th>
+<th width="300" align="center">E-mail</th>
+</tr> 
+</thead>
+<tbody>
+	
+<tr>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719709-4d184f89-ba47-4db8-be91-ea50456b4bb5.png" width="60" height="60"></td>
+<td width="100" align="center">Minseok Lee</td>
+<td width="250">AI Developer<br>Designer</td>
+<td width="150" align="center">	
+	<a href="https://github.com/mslee300">
+	<img src="https://img.shields.io/badge/mslee300-655ced?style=social&logo=github"/>
+	</a>
+</td>
+<td width="300" align="center">
+<a href="mailto:mslee300@bu.edu"><img src="https://img.shields.io/static/v1?label=&message=mslee300@bu.edu&color=lightblue&style=flat-square&logo=gmail"></a>
+</tr>
+	
+<tr>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719706-de01f100-7f5b-4a9e-ad89-899764c9949f.png" width="60" height="60"></td>
+<td width="100" align="center">Christian Rudder</td>
+<td width="250">Frontend Engineer</td>
+<td width="150" align="center">	
+	<a href="https://github.com/neezacoto">
+	<img src="https://img.shields.io/badge/simonseo-655ced?style=social&logo=github"/>
+	</a>
+</td>
+<td width="300" align="center">
+<a href="mailto:#"><img src="https://img.shields.io/static/v1?label=&message=#&color=lightblue&style=flat-square&logo=gmail"></a>
+</tr>
+	
+<tr>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719704-ea182337-b327-41c9-a7d7-9b26957ef01c.png" width="60" height="60"></td>
+<td width="100" align="center">Sai Nayunipati</td>
+<td width="250">Backend Engineer</td>
+<td width="150" align="center">	
+	<a href="https://github.com/sai-nayunipati">
+	<img src="https://img.shields.io/badge/devtaewonkim-655ced?style=social&logo=github"/>
+	</a>
+</td>
+<td width="300" align="center">
+<a href="mailto:sai.nayunipati@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=sai.nayunipati@gmail.com&color=lightblue&style=flat-square&logo=gmail"></a>
+</tr>
+	
+<tr>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719703-84288e35-1269-4dc7-a510-c65a41c09346.png" width="60" height="60"></td>
+<td width="100" align="center">Adi Bhan</td>
+<td width="250">Backend Engineer</td>
+<td width="150" align="center">	
+	<a href="https://github.com/AdiBhan">
+	<img src="https://img.shields.io/badge/liboto00-655ced?style=social&logo=github"/>
+	</a>
+</td>
+<td width="300" align="center">
+<a href="mailto:abhan03@bu.edu"><img src="https://img.shields.io/static/v1?label=&message=abhan03@bu.edu&color=lightblue&style=flat-square&logo=gmail"></a>
+</tr>
+	
+</tr>
+</tbody>
+</table>
+
 ## Back-End
 
 **Adi**: responsible for Ai Manipulation using python and Ai to generate the image and prompts, utilizing, open CV, numpy, and pillow for image manipluation in python
@@ -58,7 +125,3 @@ Here are the **3 main features**.
 
 https://user-images.githubusercontent.com/74576449/201528398-008893d8-7586-4791-aefa-43adc0c12eb0.mp4
 
-
-# Designs
-### By Benjamin Lee
-<img width="876" alt="image" src="https://user-images.githubusercontent.com/74576449/201527378-4c74271c-ccea-49a1-a8f9-242e64f1fe5f.png">
