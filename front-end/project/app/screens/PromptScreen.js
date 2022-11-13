@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
 import * as Yup from "yup";
 import AppText from "../components/AppText";
+
 import LottieView from 'lottie-react-native'
+
 
 
 import {
@@ -17,12 +19,14 @@ import Generating from "./LoadingScreen";
 import LoadGenerateScreen from "./GenerateScreen";
 import LoadGenerating from "./LoadingScreen";
 
+
 const validationSchema = Yup.object().shape({
   background: Yup.string().required().min(1).label("Background Description"),
   product: Yup.string().required().min(1).label("Product Description"),
   target: Yup.string().required().min(1).label("Target Audience"),
   style: Yup.object().required().nullable().label("Style"),
 });
+
 
 function PromptScreen ({ navigation }) {
 
@@ -98,6 +102,7 @@ const styles = StyleSheet.create({
     fontWeight: "500"
   },
   submitButton: {
+
     marginTop: "38%",
     position: "absolute",
   },

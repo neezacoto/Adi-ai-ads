@@ -4,9 +4,11 @@ import { View, StyleSheet, Image } from 'react-native';
 import AppButton from '../components/AppButton';
 import AppText from '../components/AppText';
 import appStyles from '../config/appStyles';
+
 import routes from '../navigation/routes';
 
 function WelcomeScreen({ navigation }) {
+
         return (
             <View style={[styles.container, appStyles.statusBar]}>
                 <View style={styles.textContainer}>
@@ -23,6 +25,7 @@ function WelcomeScreen({ navigation }) {
 
                 </View>
                 <View style={styles.buttonContainer}>
+
                     <AppButton 
                         onPress={() => navigation.navigate(routes.SIGNUP)}
                         style={styles.loginButton} 
@@ -35,6 +38,7 @@ function WelcomeScreen({ navigation }) {
                         isInverted 
                         title="I already have an account" 
                         color={appStyles.themes.white}/>
+
                 </View>
                 
                 

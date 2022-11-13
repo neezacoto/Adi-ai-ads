@@ -12,6 +12,7 @@ import {
     SubmitButton,
 } from '../components/Forms'
 import appStyles from '../config/appStyles';
+
 import routes from '../navigation/routes';
 
 const validationSchema = Yup.object().shape({
@@ -20,6 +21,7 @@ const validationSchema = Yup.object().shape({
     passwordConfirmation: Yup.string()
     .oneOf([Yup.ref('password'), null], 'Passwords must match')
 })
+
 
 function SignUpScreen({ navigation }) {
     const handleSubmit = (values) => {
@@ -34,6 +36,7 @@ function SignUpScreen({ navigation }) {
                 </View>
                 <AppForm
                     initialValues={{email: '', password: '', passwordConfirmation: ''}}
+
                     onSubmit={values => handleSubmit(values)}
                     validationSchema={validationSchema}
                 >
@@ -72,6 +75,7 @@ function SignUpScreen({ navigation }) {
                             <AppText style={styles.wrongText}>
                                 Already have an account?
                             </AppText>
+
                             <TouchableWithoutFeedback
                                 onPress={()=> navigation.navigate(routes.LOGIN)}
                             >
