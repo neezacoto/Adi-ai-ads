@@ -110,18 +110,6 @@ Here are the **3 main features**.
 </tbody>
 </table>
 
-## Back-End
-
-**Adi**: responsible for Ai Manipulation using python and Ai to generate the image and prompts, utilizing, open CV, numpy, and pillow for image manipluation in python
-
-**Ben**: UI/UX Design, Group Lead, and helped with AI implementation, and overall workflow
-
-**Sai**: Responsible for setting up the API and database infrustructure utilizing Jango with python
-
-## Front-End
-
-** **: Resposible for implementing the app with React Native, both compatible with IOS/Android, utilizing Formik, Yup, Expo, Node.js, and API Sauce.
-
 # [Back-end Demo](https://youtu.be/ESuaNxuOmRE)
 
 # [Front-end Demo](https://youtube.com/shorts/BpljlWJkyfA)
