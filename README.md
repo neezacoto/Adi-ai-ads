@@ -21,7 +21,7 @@ Here are the **3 main features**.
 
 > Takes a few keyword inputs, turn them into a production-level copywriting using GPT-3 model's auto completion.
 
-<img src="https://user-images.githubusercontent.com/55467050/201531780-d1d52b27-1ae1-4310-a9b5-4f5a6052e3c4.png">
+<img width="209" alt="image" src="https://user-images.githubusercontent.com/55467050/201532429-6961538f-2aeb-45b1-925b-23277ac7f2b5.png">
 
 ### Ad Image Generation
 
