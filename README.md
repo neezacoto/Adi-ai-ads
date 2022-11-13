@@ -15,7 +15,7 @@ Here are the **3 main features**.
 
 * [**`🔍 Prompt Engineering`**](https://fourweekmba.com/prompt-engineering/): Turning a few keywords into a production-level copywriting.
 * [**`🖌️ Ad Image Generation`**](https://www.youtube.com/watch?v=BpljlWJkyfA) : Instantly generates an ad poster using AI models.
-* [**`✉️ Customer Messaging`**](https://www.twilio.com/messaging?utm_source=google&utm_medium=cpc&utm_term=twilio%20messaging&utm_campaign=G_S_NAMER_Brand_Twilio_Tier2&cq_plac=&cq_net=g&cq_pos=&cq_med=&cq_plt=gp&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEFraTVNHyxH9yQYTwyBmZ3w83xbYxiO7zUW8cqmeVcktQVuIgxZaIQaAgo6EALw_wcB) : Multi-purpose messaging to communicate with customers.
+* [**`✉️ Customer Messenger`**](https://www.twilio.com/messaging?utm_source=google&utm_medium=cpc&utm_term=twilio%20messaging&utm_campaign=G_S_NAMER_Brand_Twilio_Tier2&cq_plac=&cq_net=g&cq_pos=&cq_med=&cq_plt=gp&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEFraTVNHyxH9yQYTwyBmZ3w83xbYxiO7zUW8cqmeVcktQVuIgxZaIQaAgo6EALw_wcB) : Multi-purpose messaging to communicate with customers.
 
 ### Prompt Engineering
 
@@ -29,10 +29,16 @@ Here are the **3 main features**.
 
 <img width="413" alt="image" src="https://user-images.githubusercontent.com/55467050/201532390-bf98aa08-798b-4e2e-bdf7-e562efbc9d51.png">
 
+### Customer Messenger
+
+> Multi-purpose messaging in order to communicate with the customers.
+
+<img width="193" alt="image" src="https://user-images.githubusercontent.com/55467050/201532516-0f97e403-b71a-41ba-ad6a-a480967fbd17.png">
 
 
-# TechStack
+## 🧱 Technique Used
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
+ 
  
 ## Back-End
 
