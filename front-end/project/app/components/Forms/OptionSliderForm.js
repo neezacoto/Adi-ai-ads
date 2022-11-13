@@ -2,7 +2,6 @@ import {useFormikContext } from 'formik';
 import React, { useRef, useState } from 'react';
 import { View, StyleSheet, Image, ScrollView, TouchableWithoutFeedback } from 'react-native';
 
-import App from '../../../App';
 import appStyles from '../../config/appStyles';
 import AppText from '../AppText';
 import ErrorMessages from './ErrorMessages';
@@ -35,7 +34,7 @@ const list = [
 ]
 function OptionSliderForm({name}) {
     const scrollView = useRef(); 
-    const { errors, setFieldValue, touched} = useFormikContext();
+    const { errors, setFieldValue, touched, values} = useFormikContext();
 
     const [isSelected, setIsSelected] = useState({});
 
@@ -44,6 +43,9 @@ function OptionSliderForm({name}) {
           //...isSelected, <- to allow for multiple to be selected
           [style]: !isSelected[style],
         });
+        setFieldValue(name, {
+            [style]: !isSelected[style],
+          })
       };
 
     return (
@@ -52,17 +54,19 @@ function OptionSliderForm({name}) {
                 <ScrollView ref={scrollView} horizontal >
                     <View style={styles.listContainer}>
                         {list.map(option => (
-                            <View>
-                            <TouchableWithoutFeedback onPress={()=> {
-                                    setFieldValue(option.name, option.name)
-                                    toggleSelected(option.name)
-                                }}>
-                                <View style={[styles.styleContainer, styles.containerShadow]}>
-                                    { isSelected[option.name] && <View style={styles.shadow}/> }
-                                    <Image source={option.uri} style={styles.image} />
-                                </View>
-                            </TouchableWithoutFeedback>
-                            <AppText style={styles.text}>{option.name}</AppText>
+                            <View style={styles.buttonContainer} >
+                                {isSelected[option.name] && <View style={styles.blocker}/>}
+                                <TouchableWithoutFeedback 
+                                    
+                                    onPress={()=> {
+                                            toggleSelected(option.name)
+                                        }}>
+                                    <View style={[styles.styleContainer, styles.containerShadow]}>
+                                        { isSelected[option.name] && <View style={styles.shadow}/> }
+                                        <Image source={option.uri} style={styles.image} />
+                                    </View>
+                                </TouchableWithoutFeedback>
+                                <AppText style={styles.text}>{option.name}</AppText>
                             </ View>
                             
                             ))} 
@@ -117,6 +121,16 @@ const styles = StyleSheet.create({
     shadowRadius: 2.65,
 
     elevation: 7,
+  },
+  blocker: {
+    position: "absolute",
+    backgroundColor: "transparent",
+    zIndex: 3,
+    width: 100,
+    height: 100
+  },
+  buttonContainer: {
+    position: "relative"
   }
   
 })
