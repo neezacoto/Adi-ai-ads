@@ -19,6 +19,7 @@ Here are the **3 main features**.
 
 <h3 id="feature1">Prompt Engineering</h3>
 > Takes a few keyword inputs, turn them into a production-level copywriting using GPT-3 model's auto completion.
+
 <img src="https://user-images.githubusercontent.com/55467050/201531780-d1d52b27-1ae1-4310-a9b5-4f5a6052e3c4.png">
 
 
