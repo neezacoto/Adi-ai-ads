@@ -76,7 +76,7 @@ Here are the **3 main features**.
 
 </td>
 <td width="300" align="center">
-<a href="mailto:"><img src="https://img.shields.io/static/v1?label=&message=#&color=lightblue&style=flat-square&logo=gmail"></a>
+<a href="mailto:ringthebellpepper@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=RingTheBellPepper@gmail.com&color=lightblue&style=flat-square&logo=gmail"></a>
 </tr>
 
 <tr>
