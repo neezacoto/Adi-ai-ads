@@ -8,8 +8,9 @@ from django.http import FileResponse, HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from . import ai
+from . import textOnImage
 from .models import Advertisement, Profile
-
+from .textOnImage import *
 
 # pylint: disable=unused-argument
 def index(request):
@@ -51,13 +52,21 @@ def generate_image(request):
 
         style = recieved_json_data['style']
         img_desc = recieved_json_data['image_description']
-        raw_file_path = ai.generate_image(style, img_desc)
+        
+        dalle_response = ai.generate_image(style, img_desc)
+        raw_file_name = dalle_response[0]
+        dalle_link = dalle_response[1]
 
-        # Generate the processed image with Adi's code
-        # Create an Advertisement model
-        # Return a JSON Response to the resource
+        processed_file_name = generate_text(slogan, r'C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\raw' + f'\{raw_file_name}', style)
 
-        return JsonResponse({"hadSufficientCredits": True, "resource_link": "example.org/1"})
+        ad = Advertisement(owner=user_profile, raw_image_file_name=raw_file_name, 
+                           processed_image_file_name=processed_file_name, style=style, 
+                           image_description=img_desc, product_description=desc, 
+                           target_audience=audience, slogan=slogan, dalle_link=dalle_link)
+
+        ad.save()
+
+        return JsonResponse({"hadSufficientCredits": True, "resource_link": f"http://127.0.0.1:8000/output/{processed_file_name}"})
 
     return JsonResponse({"hadSufficientCredits": False})
 
@@ -200,3 +209,6 @@ def update_advertisement_text(request, resource_path):
     ad.save()
 
     return HttpResponse("Success!")
+
+def get_dalle_url(request):
+    pass

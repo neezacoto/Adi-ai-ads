@@ -8,7 +8,7 @@ def generate_slogan(product_desc, target_audience):
     """
     Takes product description and target audience as string, returns string slogan
     """
-    openai.api_key = "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"  # ADD API KEY HERE
+    openai.api_key = "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"  # ADD API KEY HERE
     response = openai.Completion.create(
         model="text-davinci-002", prompt=f"Write a one-line creative ad for the following product to run on Instagram aimed at {target_audience.lower()}:\n\nProduct: {product_desc}.", temperature=0.5, max_tokens=60)
     return response['choices'][0]['text'].strip()
@@ -20,7 +20,7 @@ def generate_image(style, image_description):
     style must be one of following:
     'random', 'photo', '3d-render', 'cartoon', 'painting', 'hand-drawn'.
     """
-    openai.api_key = "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"  # ADD API KEY HERE
+    openai.api_key = "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"  # ADD API KEY HERE
     if style == "random":
         image_style = ""
     elif style == "photo":
@@ -59,4 +59,4 @@ def generate_image(style, image_description):
         fp.write(response.content)
         fp.close()
 
-    return file_name
+    return (file_name, url_path)

@@ -20,3 +20,5 @@ class Advertisement(models.Model):
     target_audience = models.CharField(max_length=500)
 
     slogan = models.CharField(max_length=500)
+
+    dalle_link = models.CharField(max_length=750)

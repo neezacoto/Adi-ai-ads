@@ -12,5 +12,6 @@ urlpatterns = [
     path('register/<str:username>/<str:password>',
          views.register, name='register'),
     path('get-all/', views.get_all_owned_images, name='get-all'),
-    path('update-advertisement-text/<str:resource_path>', views.update_advertisement_text, name='update-advertisement_text')
+    path('update-advertisement-text/<str:resource_path>', views.update_advertisement_text, name='update-advertisement_text'),
+    path('get-dalle-url', views.get_dalle_url, name='get_dalle_url'),
 ]
