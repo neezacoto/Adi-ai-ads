@@ -11,9 +11,9 @@
 
 Here are the **3 main features**.
 
-* [**`💀 위협 대시보드`**](https://navycert.notion.site/4a6b066671cc44e78ca5be32b29aa72a): 여론의 감정 상태, 언론 보도 현황등을 시각화해주는 대시보드입니다.
-* [**`😤 위협 탐지`**](https://navycert.notion.site/503f48a54cfb451a8074ed904140538d) : 군사 기밀 유출, 허위 기사 등의 악성글을 자동으로 탐지분석해주는 위협 탐지페이지 입니다.
-* [**`📰 보고서 생성`**](https://navycert.notion.site/2726ca50f1ac4d0aae28792aa8ae117e) : 클릭 몇번만으로 커스텀 가능한 위협 보고서를 자동으로 생성해줍니다.
+* [**`🔍 Prompt Engineering`**](https://fourweekmba.com/prompt-engineering/): Turning few keywords into a production-level copywriting.
+* [**`🖌️ Ad Image Generation`**](https://www.youtube.com/watch?v=BpljlWJkyfA) : Instantly generates an ad poster using AI models.
+* [**`✉️ Customer Messaging`**](https://www.twilio.com/messaging?utm_source=google&utm_medium=cpc&utm_term=twilio%20messaging&utm_campaign=G_S_NAMER_Brand_Twilio_Tier2&cq_plac=&cq_net=g&cq_pos=&cq_med=&cq_plt=gp&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEFraTVNHyxH9yQYTwyBmZ3w83xbYxiO7zUW8cqmeVcktQVuIgxZaIQaAgo6EALw_wcB) : Multi-purpose messaging to communicate with customers.
 
 # TechStack
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
