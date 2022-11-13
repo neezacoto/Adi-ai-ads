@@ -66,33 +66,35 @@ Here are the **3 main features**.
 </tr>
 	
 <tr>
-<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719706-de01f100-7f5b-4a9e-ad89-899764c9949f.png" width="60" height="60"></td>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/201533421-5816b7f1-b437-4319-88a4-af3586f09533.png" width="60" height="60"></td>
 <td width="100" align="center">Christian Rudder</td>
 <td width="250">Frontend Engineer</td>
 <td width="150" align="center">	
 	<a href="https://github.com/neezacoto">
 	<img src="https://img.shields.io/badge/christian-655ced?style=social&logo=github"/>
 	</a>
+
 </td>
 <td width="300" align="center">
-<a href="mailto:#"><img src="https://img.shields.io/static/v1?label=&message=#&color=lightblue&style=flat-square&logo=gmail"></a>
+<a href="mailto:"><img src="https://img.shields.io/static/v1?label=&message=#&color=lightblue&style=flat-square&logo=gmail"></a>
 </tr>
-	
+
 <tr>
-<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719704-ea182337-b327-41c9-a7d7-9b26957ef01c.png" width="60" height="60"></td>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/201533446-7e716021-b5b4-4be1-9ffd-70d667ad876b.png" width="60" height="60"></td>
 <td width="100" align="center">Sai Nayunipati</td>
 <td width="250">Backend Engineer</td>
 <td width="150" align="center">	
 	<a href="https://github.com/sai-nayunipati">
-	<img src="https://img.shields.io/badge/devtaewonkim-655ced?style=social&logo=github"/>
+	<img src="https://img.shields.io/badge/sainayunipati-655ced?style=social&logo=github"/>
 	</a>
 </td>
 <td width="300" align="center">
 <a href="mailto:sai.nayunipati@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=sai.nayunipati@gmail.com&color=lightblue&style=flat-square&logo=gmail"></a>
 </tr>
-	
+
+
 <tr>
-<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/136719703-84288e35-1269-4dc7-a510-c65a41c09346.png" width="60" height="60"></td>
+<td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/201533477-544d3371-e32b-44cf-b068-0fe9d1d080ee.png" width="60" height="60"></td>
 <td width="100" align="center">Adi Bhan</td>
 <td width="250">Backend Engineer</td>
 <td width="150" align="center">	
@@ -118,7 +120,7 @@ Here are the **3 main features**.
 
 ## Front-End
 
-**Christian**: Resposible for implementing the app with React Native, both compatible with IOS/Android, utilizing Formik, Yup, Expo, Node.js, and API Sauce.
+** **: Resposible for implementing the app with React Native, both compatible with IOS/Android, utilizing Formik, Yup, Expo, Node.js, and API Sauce.
 
 # [Back-end Demo](https://youtu.be/ESuaNxuOmRE)
 
