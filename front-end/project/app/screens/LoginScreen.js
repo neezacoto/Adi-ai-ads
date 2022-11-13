@@ -13,12 +13,19 @@ import {
 } from '../components/Forms'
 import appStyles from '../config/appStyles';
 
+import routes from '../navigation/routes';
+
 const validationSchema = Yup.object().shape({
     email: Yup.string().required().email().label("Email"),
     password: Yup.string().required().min(4).label("Password"),
 })
 
-function LoginScreen(props) {
+
+function LoginScreen({ navigation }) {
+    const handleSubmit = (values) => {
+        console.log(values)
+        navigation.navigate(routes.PROMPT)
+    }
     return (
         <View style={[appStyles.statusBar, styles.container]}>
                 <View style={styles.headerContainer}>
@@ -27,7 +34,9 @@ function LoginScreen(props) {
                 </View>
                 <AppForm
                     initialValues={{email: '', password: ''}}
-                    onSubmit={values => console.log(values)}
+
+                    onSubmit={values => handleSubmit(values)}
+
                     validationSchema={validationSchema}
                 >
                     <AppFormField
@@ -56,7 +65,9 @@ function LoginScreen(props) {
                             <AppText style={styles.wrongText}>
                                 Already have an account?
                             </AppText>
-                            <TouchableWithoutFeedback>
+                            <TouchableWithoutFeedback
+                                onPress={()=> navigation.navigate(routes.SIGNUP)}
+                            >
                                 <AppText style={styles.loginText}>
                                     Sign up
                                 </AppText>
