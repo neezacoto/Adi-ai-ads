@@ -23,6 +23,13 @@ Here are the **3 main features**.
 
 <img src="https://user-images.githubusercontent.com/55467050/201531780-d1d52b27-1ae1-4310-a9b5-4f5a6052e3c4.png">
 
+### Ad Image Generation
+
+> Instantly generates an ad poster using the generated copywriting & DALLE-2 image generation model.
+
+![image](https://user-images.githubusercontent.com/55467050/201532296-375bff8a-0a0d-4c67-8d99-d28b1b2eb68d.png)
+
+
 
 # TechStack
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/74576449/201527848-1d6bd653-c0a7-456f-97e0-b773d677ab6f.png">
