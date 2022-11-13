@@ -4,8 +4,9 @@ import { View, StyleSheet, Image } from 'react-native';
 import AppButton from '../components/AppButton';
 import AppText from '../components/AppText';
 import appStyles from '../config/appStyles';
+import routes from '../navigation/routes';
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
         return (
             <View style={[styles.container, appStyles.statusBar]}>
                 <View style={styles.textContainer}>
@@ -22,8 +23,18 @@ function WelcomeScreen(props) {
 
                 </View>
                 <View style={styles.buttonContainer}>
-                    <AppButton style={styles.loginButton} upperCase title="get started" color={appStyles.themes.white}/>
-                    <AppButton upperCase isInverted title="I already have an account" color={appStyles.themes.white}/>
+                    <AppButton 
+                        onPress={() => navigation.navigate(routes.SIGNUP)}
+                        style={styles.loginButton} 
+                        upperCase 
+                        title="get started" 
+                        color={appStyles.themes.white}/>
+                    <AppButton 
+                        onPress={() => navigation.navigate(routes.LOGIN)}
+                        upperCase 
+                        isInverted 
+                        title="I already have an account" 
+                        color={appStyles.themes.white}/>
                 </View>
                 
                 
