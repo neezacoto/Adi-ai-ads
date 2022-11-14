@@ -26,7 +26,7 @@ Here are the **3 main features**.
 
 > Instantly generates an ad poster using the generated copywriting & DALLE-2 image generation model.
 
-<img width="413" alt="image" src="https://user-images.githubusercontent.com/55467050/201532390-bf98aa08-798b-4e2e-bdf7-e562efbc9d51.png">
+<img width="390" alt="Screen Shot 2022-11-13 at 7 59 48 PM" src="https://user-images.githubusercontent.com/55467050/201554831-c5db0646-3e38-4977-acf8-3426894aa7fa.png">
 
 ### Customer Messenger
 
