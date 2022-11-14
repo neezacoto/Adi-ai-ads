@@ -1,8 +1,16 @@
 
 # Adi 🤖 - AI Ad Generator App
+
+
+
+
 <div align='center'>
 <img width="921" alt="thumbnail" src="https://user-images.githubusercontent.com/55467050/201554232-9b6dfbfa-c1e3-4ecb-bd7e-d1b9d064b843.png">
 </div>
+
+
+## 🏆Awards
+> Boston Hacks 2022 Best General Hack
 
 ## :monocle_face: Intro
 
@@ -112,4 +120,5 @@ Here are the **3 main features**.
 
 ## 📺 [Demo Video](https://youtube.com/shorts/BpljlWJkyfA)
 https://user-images.githubusercontent.com/74576449/201528398-008893d8-7586-4791-aefa-43adc0c12eb0.mp4
+
 
