@@ -12,7 +12,7 @@
 
 Here are the **3 main features**.
 
-* [**`🔍 Prompt Engineering`**](https://fourweekmba.com/prompt-engineering/): Turning a few keywords into a production-level copywriting.
+* [**`🔍 Prompt Engineering`**](https://fourweekmba.com/prompt-engineering/): Turns a few keywords into a production-level copywriting.
 * [**`🖌️ Ad Image Generation`**](https://www.youtube.com/watch?v=BpljlWJkyfA) : Instantly generates an ad poster using AI models.
 * [**`✉️ Customer Messenger`**](https://www.twilio.com/messaging?utm_source=google&utm_medium=cpc&utm_term=twilio%20messaging&utm_campaign=G_S_NAMER_Brand_Twilio_Tier2&cq_plac=&cq_net=g&cq_pos=&cq_med=&cq_plt=gp&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEFraTVNHyxH9yQYTwyBmZ3w83xbYxiO7zUW8cqmeVcktQVuIgxZaIQaAgo6EALw_wcB) : Multi-purpose messaging to communicate with customers.
 
