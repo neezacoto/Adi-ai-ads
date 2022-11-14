@@ -1,7 +1,7 @@
 
 # Adi 🤖 - AI Ad Generator App
 <div align='center'>
-<img width="865" alt="thumbnail" src="https://user-images.githubusercontent.com/55467050/201530306-e5bf75a4-cbe4-4a6c-8f8d-6fed1ed4019b.png">
+<img width="921" alt="thumbnail" src="https://user-images.githubusercontent.com/55467050/201554232-9b6dfbfa-c1e3-4ecb-bd7e-d1b9d064b843.png">
 </div>
 
 ## :monocle_face: Intro
