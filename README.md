@@ -30,7 +30,7 @@ Here are the **3 main features**.
 
 ### Customer Messenger
 
-> Multi-purpose messaging in order to communicate with the customers.
+> Multi-purpose messaging to communicate with customers.
 
 <img width="193" alt="image" src="https://user-images.githubusercontent.com/55467050/201532516-0f97e403-b71a-41ba-ad6a-a480967fbd17.png">
 
