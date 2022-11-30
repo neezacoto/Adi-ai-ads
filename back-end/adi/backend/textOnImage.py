@@ -20,16 +20,6 @@ Fonts = {1:loc + '/Roboto.ttf', 2:loc + '/Bodoni.ttf'}
 fonts_counter = 1
 fonts_max_size = len(Fonts) + 1
 
-## This method is used for development purposes
-# def generate_image():
-
-#     ''' Generates random image for development purposes'''
-
-#     global ranimg
-#     ranimg = get_random_image(image_size)  #returns numpy array
-#     #show_array(ranimg) #shows the image
-
-#     return ranimg
 
 
 def generate_text(slogan, file_path_unprocessed,style):
