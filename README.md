@@ -14,7 +14,7 @@
 
 ## :monocle_face: Intro
 
-> Have you ever run ads before? Probably not. It costs $200 on average to create a professional marketing poster. 
+> Have you ever created ads before? Probably not. It costs $200 on average to create a professional marketing poster. 
 > That's where Adi comes in. With just 20 cents a piece, we instantly generate a poster for you. So anyone can promote their own ventures!
 
 
