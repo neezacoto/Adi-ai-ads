@@ -8,7 +8,7 @@ def generate_slogan(product_desc, target_audience):
     """
     Takes product description and target audience as string, returns string slogan
     """
-    openai.api_key = "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"  # ADD API KEY HERE
+    openai.api_key = ""  # ADD API KEY HERE
     response = openai.Completion.create(
         model="text-davinci-002", prompt=f"Write a one-line ad for the following product to run on Instagram aimed at {target_audience.lower()}:\n\nProduct: {product_desc}.", temperature=0.5, max_tokens=60)
     return response['choices'][0]['text'].strip()
