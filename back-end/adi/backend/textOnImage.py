@@ -24,7 +24,6 @@ fonts_max_size = len(Fonts) + 1
 
 def generate_text(slogan, file_path_unprocessed,style):
     #Function generates text for image
-
     try:
         img = Image.open(file_path_unprocessed)
     except:
