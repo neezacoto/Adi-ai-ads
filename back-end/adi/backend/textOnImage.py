@@ -45,13 +45,9 @@ def generate_text(slogan, file_path_unprocessed,style):
     else:
         print("Success! Image loaded.")
         img = img.copy()
-
-
         widthPos = 30
         heightPos = 20
-
         text_color = contrasting_text_color(checkColor(file_path_unprocessed))
-
         newsize = (512, 512)
         img = img.resize(newsize)
 
@@ -61,13 +57,10 @@ def generate_text(slogan, file_path_unprocessed,style):
         start = 0
 
         Text = ImageDraw.Draw(img)
-
         
         Font = fonts_loop()
         font = ImageFont.truetype(Font, 35)
-
         
-
         avg_char_width = sum(font.getsize(char)[0] for char in ascii_letters) / len(ascii_letters)
         max_char_count = int( (img.size[0] * .95) / avg_char_width )
 
@@ -88,8 +81,6 @@ def generate_text(slogan, file_path_unprocessed,style):
                 start = i
             elif i == length-1:
                 lines.append(line)
-        
-     
 
         print('font used: '  + Font)
         if text_color == 'ffffff':    
@@ -122,7 +113,6 @@ def generate_text(slogan, file_path_unprocessed,style):
 
         # Write to the file
         file_name = f"image_{next_available}.png"
-
         img.save(r'C:\Users\Sai Nayunipati\Desktop\bostonhacks-2022\back-end\adi\processed' + f'\{file_name}')
 
         return file_name
@@ -130,9 +120,7 @@ def generate_text(slogan, file_path_unprocessed,style):
 
 
 def fonts_loop():
-
-    ''' Helper method which returns a new font each time generate_text method is called'''
-
+    #Helper method which returns a new font each time generate_text method is called
     global fonts_counter
 
     if fonts_counter == fonts_max_size:
@@ -144,10 +132,7 @@ def fonts_loop():
   
 
 def sentence_parser(sentence,array_words):
-
-    ''' For sentences less than 5 words, adds spaces inbetween each word'''
-
-
+    #For sentences less than 5 words, adds spaces inbetween each word
     new_sentence = ""
     counter = 0
     for i in range(len(array_words)):
@@ -156,7 +141,6 @@ def sentence_parser(sentence,array_words):
             counter +=1;
         counter = 0
         new_sentence += '\n'
-
         
     return new_sentence    
 
@@ -164,9 +148,7 @@ def sentence_parser(sentence,array_words):
 
 def checkColor(file_loc):
   # Colorpicks from image and returns hexacode
-
   im = Image.open(file_loc) # Insert filename here
-  
   width, height = im.size #get image size
   
   left = (width - 30)/2
