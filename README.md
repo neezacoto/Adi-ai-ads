@@ -63,7 +63,7 @@ Here are the **3 main features**.
 <tr>
 <td width="100" align="center"><img src="https://user-images.githubusercontent.com/55467050/201533525-3221b98e-b032-4f70-ac76-379e1259ec3e.png" width="60" height="60"></td>
 <td width="100" align="center">Minseok Lee</td>
-<td width="250">AI Developer<br>Designer</td>
+<td width="250">AI & Backend Developer<br>Designer</td>
 <td width="150" align="center">	
 	<a href="https://github.com/mslee300">
 	<img src="https://img.shields.io/badge/mslee300-655ced?style=social&logo=github"/>
